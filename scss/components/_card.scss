@@ -1,0 +1,111 @@
+%round-btn {
+  width: clamp(2rem, 12vw, 3.5rem);
+  height: clamp(2rem, 12vw, 3.5rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-blue;
+  border-radius: $border-radius-round;
+}
+
+.card {
+  max-width: 415px;
+  background: $linear-grad-dark;
+  margin: 0 $base-margin;
+  border-radius: $base-border-radius;
+  display: flex;
+  flex-direction: column;
+
+  &-star {
+    @extend %round-btn;
+    margin: $base-margin * 1.5 $base-margin * 1.5 $base-margin;
+  }
+
+  &-title {
+    font-weight: $font-weight-semibold;
+    color: $white;
+    font-size: $font-size-large;
+    margin: 0 $base-margin * 2 $base-margin * 0.75;
+  }
+
+  &-body {
+    font-weight: $base-font-weight;
+    color: $light-grey;
+    font-size: $base-font-size;
+    margin: 0 $base-margin * 2 $base-margin * 2;
+    line-height: $base-line-height;
+  }
+
+  &-rate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 $base-margin * 2 $base-margin * 2;
+
+    &__list {
+      @extend %round-btn;
+      font-size: $base-font-size;
+      color: $medium-grey;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+
+    .active {
+      background-color: $medium-grey;
+      color: $white;
+    }
+  }
+
+  &-btn {
+    margin: 0 $base-margin * 2 $base-margin * 2;
+    padding: $base-padding $base-padding * 2;
+    border-radius: $static-border-radius;
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    letter-spacing: 0.15rem;
+    color: $white;
+    background-color: $orange;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      color: $orange;
+      background-color: $white;
+    }
+  }
+
+  &-illustration {
+    max-width: 50%;
+    height: auto;
+    margin: $base-margin * 3 0 $base-margin * 2;
+  }
+}
+
+.thank-you {
+  align-items: center;
+
+  .card {
+    &-body {
+      text-align: center;
+      margin-bottom: $base-margin * 2;
+    }
+
+    &-submition {
+      display: flex;
+      flex-direction: row wrap;
+      align-items: center;
+
+      .card-body {
+        background-color: $dark-blue;
+        color: $orange;
+        padding: $base-padding * 0.625 $base-padding * 1.25;
+        border-radius: $static-border-radius;
+      }
+    }
+  }
+}

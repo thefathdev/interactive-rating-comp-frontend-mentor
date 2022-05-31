@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="container">
+      <section id="rate" class="card">
+        <div class="card-star">
+          <img src="./images/icon-star.svg" alt="star icon" />
+        </div>
+        <h1 class="card-title">How did we do?</h1>
+        <p class="card-body">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div id="rate-btn" class="card-rate">
+          <button class="card-rate__list"><span>1</span></button>
+          <button class="card-rate__list"><span>2</span></button>
+          <button class="card-rate__list"><span>3</span></button>
+          <button class="card-rate__list"><span>4</span></button>
+          <button class="card-rate__list"><span>5</span></button>
+        </div>
+        <button id="submit-btn" type="submit" class="card-btn">SUBMIT</button>
+      </section>
+      <section id="thank-you" class="card thank-you hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="thank you illustration"
+          class="card-illustration"
+        />
+        <div class="card-submition">
+          <p class="card-body">
+            You selected <span id="rating"></span> out of 5
+          </p>
+        </div>
+        <h1 class="card-title">Thank you!</h1>
+        <p class="card-body">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+// colors and gradients
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+$linear-grad-dark: linear-gradient(180deg, #252d37 -47.11%, #121417 145.78%);
+
+// font-sizes and font-weights
+$base-font-size: clamp(0.9rem, 2.5vw, 1rem);
+$font-size-large: clamp(1.5rem, 4vw, 1.75rem);
+
+$base-font-weight: 400;
+$font-weight-semibold: 600;
+
+//line-heights
+$base-line-height: 1.625rem;
+
+// border radius
+$base-border-radius: clamp(1rem, 1.5vw, 2rem);
+$static-border-radius: 2rem;
+$border-radius-round: 50%;
+
+// margin and padding
+$base-margin: 1rem;
+$base-padding: 1rem;
